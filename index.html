@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,30 @@
   <link rel="stylesheet" href="style.css">
   <title>Survey Form</title>
 </head>
+
 <body>
   <div id="container">
+    <h1>Survey Form</h1>
+
     <div id="main">
-      <h1>Survey Form</h1>
+      <p id="summary">Let us know how we can improve freeCodeCamp</p>
+
+      <form action="" method="POST">
+        <div class="form-row">
+          <label for="name" class="left-column">* Name: </label>
+          <input type="text" id="name" name="name" class="right-column" placeholder="Enter your name">
+        </div>
+        <div class="form-row">
+          <label for="email" class="left-column">* Email: </label>
+          <input type="text" id="email" name="email" class="right-column" placeholder="Enter your email">
+        </div>
+        <div class="form-row">
+          <label for="age" class="left-column">* Age: </label>
+          <input type="number" id="age" name="age" class="right-column" placeholder="Enter your age">
+        </div>
+      </form>
     </div>
   </div>
 </body>
+
 </html>
