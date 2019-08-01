@@ -29,13 +29,15 @@ body {
 } 
 
 .left-column{
-  min-width: 300px;
+  flex-basis: 200px;
+  flex-grow: 1;
   text-align: end;
   margin: 20px 20px 0 20px;
 }
 
 .right-column{
-  min-width: 300px;
+  flex-basis: 200px;
+  flex-grow: 1;
   border: 20px 20px 0 20px;
-  height: 30px;
+  min-height: 30px;
 }
