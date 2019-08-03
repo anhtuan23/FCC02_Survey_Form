@@ -10,38 +10,39 @@
 </head>
 
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <div id="container">
-    <h1>Survey Form</h1>
+    <h1 id="title">Survey Form</h1>
 
     <div id="main">
-      <p id="summary">Let us know how we can improve freeCodeCamp</p>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
 
-      <form action="" method="POST">
+      <form action="" method="POST" id="survey-form">
         <!-- #region Name-->
         <div class="form-row">
-          <label for="name" class="left-column flex-item flex-item">* Name: </label>
-          <input type="text" id="name" name="name" class="right-column flex-item" placeholder="Enter your name">
+          <label for="name" class="left-column flex-item flex-item" id="name-label">* Name: </label>
+          <input type="text" id="name" name="name" class="right-column flex-item" placeholder="Enter your name" required>
         </div>
         <!-- #endregion -->
 
         <!-- #region Email -->
         <div class="form-row">
-          <label for="email" class="left-column flex-item">* Email: </label>
-          <input type="text" id="email" name="email" class="right-column flex-item" placeholder="Enter your email">
+          <label for="email" class="left-column flex-item" id="email-label">* Email: </label>
+          <input type="email" id="email" name="email" class="right-column flex-item" placeholder="Enter your email" required>
         </div>
         <!-- #endregion -->
 
         <!-- #region age -->
         <div class="form-row">
-          <label for="age" class="left-column flex-item">* Age: </label>
-          <input type="number" id="age" name="age" class="right-column flex-item" placeholder="Enter your age">
+          <label for="number" class="left-column flex-item" id="number-label">* Age: </label>
+          <input type="number" min="0" max="1000" id="number" name="age" class="right-column flex-item" placeholder="Enter your age">
         </div>
         <!-- #endregion -->
 
         <!-- #region role -->
         <div class="form-row">
-          <label for="role-select" class="left-column flex-item">Which option best describes your current role? </label>
-          <select id="role-select" class="right-column flex-item">
+          <label for="dropdown" class="left-column flex-item">Which option best describes your current role? </label>
+          <select id="dropdown" class="right-column flex-item">
             <option value="" disabled>Select an option</option>
             <option value="student" selected>Student</option>
             <option value="full-time-job">Full Time Job</option>
@@ -91,47 +92,47 @@
 
           <div class="right-column flex-item">
             <div>
-              <input type="checkbox" id="front-end-projects" name="improve">
+              <input type="checkbox" id="front-end-projects" value="front-end-projects" name="improve">
               <label for="front-end-projects">Front-end Projects</label>
             </div>
             <div>
-              <input type="checkbox" id="back-end-projects" name="improve">
+              <input type="checkbox" id="back-end-projects" value="back-end-projects" name="improve">
               <label for="back-end-projects">Back-end Projects</label>
             </div>
             <div>
-              <input type="checkbox" id="data-visualization" name="improve">
+              <input type="checkbox" id="data-visualization" value="data-visualization" name="improve">
               <label for="data-visualization">Data Visualization</label>
             </div>
             <div>
-              <input type="checkbox" id="challenges" name="improve">
+              <input type="checkbox" id="challenges" value="challenges" name="improve">
               <label for="challenges">Challenges</label>
             </div>
             <div>
-              <input type="checkbox" id="open-source-community" name="improve">
+              <input type="checkbox" id="open-source-community" value="open-source-community" name="improve">
               <label for="open-source-community">Open Source Community</label>
             </div>
             <div>
-              <input type="checkbox" id="gitter-help-rooms" name="improve">
+              <input type="checkbox" id="gitter-help-rooms" value="gitter-help-rooms" name="improve">
               <label for="gitter-help-rooms">Gitter help rooms</label>
             </div>
             <div>
-              <input type="checkbox" id="videos" name="improve">
+              <input type="checkbox" id="videos" value="videos" name="improve">
               <label for="videos">Videos</label>
             </div>
             <div>
-              <input type="checkbox" id="city-meetups" name="improve">
+              <input type="checkbox" id="city-meetups" value="city-meetups" name="improve">
               <label for="city-meetups">City Meetups</label>
             </div>
             <div>
-              <input type="checkbox" id="wiki" name="improve">
+              <input type="checkbox" id="wiki" value="wiki" name="improve">
               <label for="wiki"></label>Wiki</label>
             </div>
             <div>
-              <input type="checkbox" id="forum" name="improve">
+              <input type="checkbox" id="forum" value="forum" name="improve">
               <label for="forum">Forum</label>
             </div>
             <div>
-              <input type="checkbox" id="additional-courses" name="improve">
+              <input type="checkbox" id="additional-courses" value="additional-courses" name="improve">
               <label for="additional-courses">Additional Courses</label>
             </div>
 
@@ -141,7 +142,7 @@
 
         <!-- #region suggestions -->
         <div class="form-row">
-          <label for="suggestions" class="left-column flex-item">What do you like most in FCC: </label>
+          <label for="suggestions" class="left-column flex-item">Any Comments or Suggestions? </label>
           <textarea rows="4" cols="30" id="suggestions" name="suggestions" class="right-column flex-item"
             placeholder="Enter your comment here..."></textarea>
         </div>
@@ -149,7 +150,7 @@
 
         <!-- #region submit-->
         <div id="submit-control">
-          <input type="submit" value="Submit" id="submit-button">
+          <input type="submit" value="Submit" id="submit">
         </div>
         <!-- #endregion -->
       </form>
