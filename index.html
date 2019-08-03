@@ -19,29 +19,29 @@
       <form action="" method="POST">
         <!-- #region Name-->
         <div class="form-row">
-          <label for="name" class="left-column">* Name: </label>
-          <input type="text" id="name" name="name" class="right-column" placeholder="Enter your name">
+          <label for="name" class="left-column flex-item flex-item">* Name: </label>
+          <input type="text" id="name" name="name" class="right-column flex-item" placeholder="Enter your name">
         </div>
         <!-- #endregion -->
 
         <!-- #region Email -->
         <div class="form-row">
-          <label for="email" class="left-column">* Email: </label>
-          <input type="text" id="email" name="email" class="right-column" placeholder="Enter your email">
+          <label for="email" class="left-column flex-item">* Email: </label>
+          <input type="text" id="email" name="email" class="right-column flex-item" placeholder="Enter your email">
         </div>
         <!-- #endregion -->
 
         <!-- #region age -->
         <div class="form-row">
-          <label for="age" class="left-column">* Age: </label>
-          <input type="number" id="age" name="age" class="right-column" placeholder="Enter your age">
+          <label for="age" class="left-column flex-item">* Age: </label>
+          <input type="number" id="age" name="age" class="right-column flex-item" placeholder="Enter your age">
         </div>
         <!-- #endregion -->
 
         <!-- #region role -->
         <div class="form-row">
-          <label for="role-select" class="left-column">Which option best describes your current role? </label>
-          <select id="role-select" class="right-column">
+          <label for="role-select" class="left-column flex-item">Which option best describes your current role? </label>
+          <select id="role-select" class="right-column flex-item">
             <option value="" disabled>Select an option</option>
             <option value="student" selected>Student</option>
             <option value="full-time-job">Full Time Job</option>
@@ -54,8 +54,8 @@
 
         <!-- #region recommend-->
         <div class="form-row">
-          <p class="left-column">* How likely is that you would recommend freeCodeCamp to a friend? </p>
-          <div class="right-column">
+          <p class="left-column flex-item">* How likely is that you would recommend freeCodeCamp to a friend? </p>
+          <div class="right-column flex-item">
             <div>
               <input type="radio" id="definitely" name="recommend" value="definitely" checked>
               <label for="definitely">Definitely</label>
@@ -74,10 +74,10 @@
 
         <!-- #region like -->
         <div class="form-row">
-          <label for="like-select" class="left-column">What do you like most in FCC: </label>
-          <select id="like-select" class="right-column">
+          <label for="like-select" class="left-column flex-item">What do you like most in FCC: </label>
+          <select id="like-select" class="right-column flex-item">
             <option value="" disabled selected>Select an option</option>
-            <option value="challenges" >Challenges</option>
+            <option value="challenges">Challenges</option>
             <option value="projects">Projects</option>
             <option value="community">Community</option>
             <option value="open-source">Open Source</option>
@@ -85,6 +85,73 @@
         </div>
         <!-- #endregion -->
 
+        <!-- #region improve-->
+        <div class="form-row">
+          <p class="left-column flex-item">Things that should be improved in the future (Check all that apply):</p>
+
+          <div class="right-column flex-item">
+            <div>
+              <input type="checkbox" id="front-end-projects" name="improve">
+              <label for="front-end-projects">Front-end Projects</label>
+            </div>
+            <div>
+              <input type="checkbox" id="back-end-projects" name="improve">
+              <label for="back-end-projects">Back-end Projects</label>
+            </div>
+            <div>
+              <input type="checkbox" id="data-visualization" name="improve">
+              <label for="data-visualization">Data Visualization</label>
+            </div>
+            <div>
+              <input type="checkbox" id="challenges" name="improve">
+              <label for="challenges">Challenges</label>
+            </div>
+            <div>
+              <input type="checkbox" id="open-source-community" name="improve">
+              <label for="open-source-community">Open Source Community</label>
+            </div>
+            <div>
+              <input type="checkbox" id="gitter-help-rooms" name="improve">
+              <label for="gitter-help-rooms">Gitter help rooms</label>
+            </div>
+            <div>
+              <input type="checkbox" id="videos" name="improve">
+              <label for="videos">Videos</label>
+            </div>
+            <div>
+              <input type="checkbox" id="city-meetups" name="improve">
+              <label for="city-meetups">City Meetups</label>
+            </div>
+            <div>
+              <input type="checkbox" id="wiki" name="improve">
+              <label for="wiki"></label>Wiki</label>
+            </div>
+            <div>
+              <input type="checkbox" id="forum" name="improve">
+              <label for="forum">Forum</label>
+            </div>
+            <div>
+              <input type="checkbox" id="additional-courses" name="improve">
+              <label for="additional-courses">Additional Courses</label>
+            </div>
+
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region suggestions -->
+        <div class="form-row">
+          <label for="suggestions" class="left-column flex-item">What do you like most in FCC: </label>
+          <textarea rows="4" cols="30" id="suggestions" name="suggestions" class="right-column flex-item"
+            placeholder="Enter your comment here..."></textarea>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region submit-->
+        <div id="submit-control">
+          <input type="submit" value="Submit" id="submit-button">
+        </div>
+        <!-- #endregion -->
       </form>
     </div>
   </div>
